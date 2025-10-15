@@ -24,6 +24,10 @@ float getMarks(){
     return marks;
 }
 
+float setMarks(float m){
+    marks = m;
+}
+
 private:
 float marks;
 
@@ -32,5 +36,7 @@ float marks;
 int main(){
 Student s1("Alice",101,95.5);
 // s1.display();
+s1.setMarks(753.5);
 cout<<s1.getMarks();
+
 }
